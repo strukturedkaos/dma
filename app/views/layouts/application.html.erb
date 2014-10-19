@@ -3,13 +3,15 @@
 <head>
   <title>Dma</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" media="all" rel="stylesheet">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.1/modernizr.min.js"></script>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+  
   <%= csrf_meta_tags %>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
 </head>
-<body>
-
 <%= yield %>
-
-</body>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 </html>
