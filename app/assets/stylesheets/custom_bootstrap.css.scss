@@ -10,6 +10,7 @@
   }
   color:                        #34495e;
   border-color:                 #ecf0f1;
+  text-shadow:                  none; /* prevents inheritence from 'body' */
 
 }
 /*-------Cover Page ----------*/
@@ -21,34 +22,15 @@ a:hover {
   color: #fff;
 }
 
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
 
-
-/*
- * Base structure
- */
-
-html,
-body {
+.landingpage{
   height: 100%;
   background: url(https://s3.amazonaws.com/dallinmckay/SiteIMG/Record_Player_alexdavila.jpg);
   background-size: cover;
-  background-color: #333;
-}
-body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-}
 
+}
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
   display: table;
