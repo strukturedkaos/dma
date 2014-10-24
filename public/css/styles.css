@@ -1,0 +1,89 @@
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-size: 17px; }
+
+.grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+  .grid li {
+    height: 50%;
+    background: #8cc7df;
+    color: white;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 0; }
+  .grid .item-name {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+    .grid .item-name h1 {
+      display: table-cell;
+      vertical-align: middle; }
+      .grid .item-name h1 small {
+        display: block;
+        text-transform: uppercase;
+        color: white;
+        font-size: 14px;
+        margin-bottom: 15px; }
+      .grid .item-name h1 b {
+        display: block;
+        margin-bottom: 40px;
+        font-size: 42px; }
+  .grid .item-overlay {
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease;
+    z-index: -1;
+    pointer-events: none;
+    cursor: default;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
+  .grid .item-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 60px 60px; }
+    .grid .item-content h2 {
+      font-size: 80px;
+      margin-bottom: 50px; }
+    .grid .item-content p {
+      margin-bottom: 25px; }
+  .grid .close {
+    cursor: pointer;
+    z-index: 1000;
+    text-shadow: none;
+    color: white;
+    font-weight: 100;
+    font-size: 90px;
+    opacity: 0.7;
+    position: fixed;
+    right: 30px; }
+    .grid .close:hover {
+      opacity: 1; }
+
+.grid li:nth-child(1), .grid li:nth-child(1) .item-overlay {
+  background: #3399cc; }
+.grid li:nth-child(2), .grid li:nth-child(2) .item-overlay {
+  background: #33cccc; }
+.grid li:nth-child(3), .grid li:nth-child(3) .item-overlay {
+  background: #996699; }
+.grid li:nth-child(4), .grid li:nth-child(4) .item-overlay {
+  background: #c24747; }
+.grid li:nth-child(5), .grid li:nth-child(5) .item-overlay {
+  background: #e2674a; }
+.grid li:nth-child(6), .grid li:nth-child(6) .item-overlay {
+  background: #ffcc66; }
+.grid li:nth-child(7), .grid li:nth-child(7) .item-overlay {
+  background: #99cc99; }
+.grid li:nth-child(8), .grid li:nth-child(8) .item-overlay {
+  background: #669999; }
